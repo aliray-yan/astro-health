@@ -1,0 +1,279 @@
+{
+  "subjects": {
+    "C001": {
+      "calcium_mgdl_preflight": {
+        "mean": 9.767,
+        "sd": 0.208,
+        "n": 3
+      },
+      "alp_UL_preflight": {
+        "mean": 47.333,
+        "sd": 3.215,
+        "n": 3
+      },
+      "crp_pgml_preflight": {
+        "mean": 8569233.333,
+        "sd": 8626927.933,
+        "n": 3
+      },
+      "fibrinogen_ngml_preflight": {
+        "mean": 3898.823,
+        "sd": 1580.783,
+        "n": 3
+      },
+      "haptoglobin_ngml_preflight": {
+        "mean": 825813.827,
+        "sd": 622523.938,
+        "n": 3
+      },
+      "il6_npq_preflight": {
+        "mean": 10.6869,
+        "sd": 0.9893,
+        "n": 2
+      },
+      "tnf_npq_preflight": {
+        "mean": 9.4557,
+        "sd": 0.3342,
+        "n": 2
+      },
+      "il1b_npq_preflight": {
+        "mean": 13.2167,
+        "sd": 0.0062,
+        "n": 2
+      },
+      "ifng_npq_preflight": {
+        "mean": 5.708,
+        "sd": 0.5257,
+        "n": 2
+      }
+    },
+    "C002": {
+      "calcium_mgdl_preflight": {
+        "mean": 9.733,
+        "sd": 0.451,
+        "n": 3
+      },
+      "alp_UL_preflight": {
+        "mean": 73.0,
+        "sd": 5.0,
+        "n": 3
+      },
+      "crp_pgml_preflight": {
+        "mean": 7487533.333,
+        "sd": 5346631.155,
+        "n": 3
+      },
+      "fibrinogen_ngml_preflight": {
+        "mean": 4739.203,
+        "sd": 1564.631,
+        "n": 3
+      },
+      "haptoglobin_ngml_preflight": {
+        "mean": 2370310.247,
+        "sd": 2007355.715,
+        "n": 3
+      },
+      "il6_npq_preflight": {
+        "mean": 12.8082,
+        "sd": 1.4653,
+        "n": 3
+      },
+      "tnf_npq_preflight": {
+        "mean": 9.2337,
+        "sd": 0.1238,
+        "n": 3
+      },
+      "il1b_npq_preflight": {
+        "mean": 13.2438,
+        "sd": 0.0492,
+        "n": 3
+      },
+      "ifng_npq_preflight": {
+        "mean": 5.6766,
+        "sd": 0.2794,
+        "n": 3
+      }
+    },
+    "C003": {
+      "calcium_mgdl_preflight": {
+        "mean": 9.7,
+        "sd": 0.529,
+        "n": 3
+      },
+      "alp_UL_preflight": {
+        "mean": 35.0,
+        "sd": 5.292,
+        "n": 3
+      },
+      "crp_pgml_preflight": {
+        "mean": 42656700.0,
+        "sd": 33183321.458,
+        "n": 3
+      },
+      "fibrinogen_ngml_preflight": {
+        "mean": 4162.42,
+        "sd": 442.886,
+        "n": 3
+      },
+      "haptoglobin_ngml_preflight": {
+        "mean": 8124557.87,
+        "sd": 8997344.136,
+        "n": 3
+      },
+      "il6_npq_preflight": {
+        "mean": 12.5154,
+        "sd": 0.3375,
+        "n": 3
+      },
+      "tnf_npq_preflight": {
+        "mean": 11.8399,
+        "sd": 0.3718,
+        "n": 3
+      },
+      "il1b_npq_preflight": {
+        "mean": 13.384,
+        "sd": 0.0851,
+        "n": 3
+      },
+      "ifng_npq_preflight": {
+        "mean": 5.7441,
+        "sd": 0.3375,
+        "n": 3
+      }
+    },
+    "C004": {
+      "calcium_mgdl_preflight": {
+        "mean": 10.1,
+        "sd": 0.1,
+        "n": 3
+      },
+      "alp_UL_preflight": {
+        "mean": 56.333,
+        "sd": 1.528,
+        "n": 3
+      },
+      "crp_pgml_preflight": {
+        "mean": 12136533.333,
+        "sd": 10139975.151,
+        "n": 3
+      },
+      "fibrinogen_ngml_preflight": {
+        "mean": 4085.817,
+        "sd": 1178.032,
+        "n": 3
+      },
+      "haptoglobin_ngml_preflight": {
+        "mean": 11962623.493,
+        "sd": 10295962.129,
+        "n": 3
+      },
+      "il6_npq_preflight": {
+        "mean": 11.7457,
+        "sd": 2.995,
+        "n": 3
+      },
+      "tnf_npq_preflight": {
+        "mean": 9.443,
+        "sd": 0.0965,
+        "n": 3
+      },
+      "il1b_npq_preflight": {
+        "mean": 13.1628,
+        "sd": 0.1476,
+        "n": 3
+      },
+      "ifng_npq_preflight": {
+        "mean": 5.8042,
+        "sd": 0.1646,
+        "n": 3
+      }
+    }
+  },
+  "group_preflight_to_R1_pct_change": {
+    "crp": 71.2,
+    "fibrinogen": -21.1,
+    "calcium": -3.1,
+    "alp": 6.8,
+    "urine_il6": 16.6,
+    "urine_tnf": -5.9,
+    "urine_il1b": 7.8,
+    "urine_ifng": -2.0
+  },
+  "citation": {
+    "integrated_datasets": [
+      {
+        "dataset": "LSDS-8 / OSD-575",
+        "title": "SpaceX Inspiration4 Blood Serum Metabolic Panel and Immune/Cardiac Cytokine Arrays",
+        "source": "NASA Open Science Data Repository (OSDR)",
+        "doi": "10.26030/mc5d-p710",
+        "biofluid": "serum",
+        "used_for": "bone_density and cardio_hr personal noise-variability calibration (calcium, ALP, CRP, fibrinogen, haptoglobin)"
+      },
+      {
+        "dataset": "LSDS-64 / OSD-656",
+        "title": "SpaceX Inspiration4 Urine Inflammation Panel (Multiplex, NULISAseq)",
+        "source": "NASA Open Science Data Repository (OSDR)",
+        "doi": "10.26030/7cax-yj10",
+        "biofluid": "urine",
+        "used_for": "immune_risk personal noise-variability calibration (IL-6, TNF-alpha, IL-1beta, IFN-gamma)"
+      }
+    ],
+    "reviewed_not_integrated": [
+      {
+        "dataset": "OSD-687",
+        "title": "SpaceX Inspiration4 T-Cell Histone Modification Profiling (H3K4me1, H3K4me3, H3K27ac)",
+        "reason": "Single crew member, single timepoint (R+194) \u2014 epigenomic proof-of-concept data, no cross-subject variability or trend to calibrate against."
+      }
+    ],
+    "related_not_obtained": [
+      {
+        "dataset": "OSD-573",
+        "title": "SpaceX Inspiration4 Dragon Capsule Metagenomic and Metatranscriptomic Microbial Swabs",
+        "reason": "Raw sequencing dataset reported as 100GB+ \u2014 impractical to download for this build."
+      },
+      {
+        "dataset": "OSD-630",
+        "title": "SpaceX Inspiration4 Stool Metagenome Profiling",
+        "reason": "Raw sequencing dataset reported as 100GB+ \u2014 impractical to download for this build."
+      },
+      {
+        "dataset": "OSD-572",
+        "title": "SpaceX Inspiration4 Oral, Nasal, and Skin Metagenomic and Metatranscriptomic Microbial Swabs",
+        "reason": "Not obtained \u2014 outside MVP scope (microbiome sequencing, not a wearable-style vital sign)."
+      },
+      {
+        "dataset": "OSD-570",
+        "title": "SpaceX Inspiration4 PBMC Profiling (snRNA-seq, snATAC-seq, TCR/BCR repertoire)",
+        "reason": "Not obtained \u2014 single-cell genomics, outside MVP scope."
+      },
+      {
+        "dataset": "OSD-571",
+        "title": "SpaceX Inspiration4 Plasma Profiling (Proteomics, EVs, Metabolomics, cfDNA/cfRNA-seq)",
+        "reason": "Not obtained \u2014 outside MVP scope."
+      },
+      {
+        "dataset": "OSD-569",
+        "title": "Whole Blood Measurements from the SpaceX Inspiration4 Mission (RNA-seq, epitranscriptome, WGS, CBC)",
+        "reason": "Not obtained \u2014 outside MVP scope."
+      },
+      {
+        "dataset": "OSD-574",
+        "title": "SpaceX Inspiration4 Deltoid Skin and Microbiome Data (Spatial Transcriptomics, Metagenomics)",
+        "reason": "Not obtained \u2014 outside MVP scope."
+      }
+    ],
+    "mission": "SpaceX Inspiration4",
+    "mission_dates": "2021-09-16 to 2021-09-18",
+    "n_crew": 4,
+    "timepoints": [
+      "L-92",
+      "L-44",
+      "L-3",
+      "R+1",
+      "R+45",
+      "R+82",
+      "R+194 (serum/CMP only)"
+    ],
+    "note": "Inspiration4 was a 3-day mission with no in-flight blood/urine draws, so it cannot supply a long-duration TREND shape \u2014 that still comes from published NASA HRP / peer-reviewed literature (see backend/config.py reference_note per indicator). What real clinical panels on 4 real people DO supply is real inter-individual variability: some people naturally swing more than others. Selecting a data profile calibrates simulated day-to-day noise to a real crew member's own preflight variability \u2014 it does not mean the simulated long-duration trajectory IS that person's real data."
+  }
+}

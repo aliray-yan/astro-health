@@ -1,0 +1,25 @@
+# Node / Next.js
+node_modules/
+.next/
+out/
+next-env.d.ts
+npm-debug.log*
+
+# Env
+.env
+.env.local
+.env*.local
+
+# Python / FastAPI
+backend/venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/*.pyc
+backend/astro_health.db
+backend/astro_health.db-journal
+
+# OS / editor
+.DS_Store
+*.swp
+.vscode/
+.idea/

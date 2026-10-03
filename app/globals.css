@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", Menlo, Consolas, monospace;
+  --color-hull-950: 5 7 13;
+  --color-hull-900: 10 14 24;
+  --color-hull-850: 15 20 34;
+  --color-hull-800: 20 26 43;
+  --color-hull-700: 30 39 64;
+  --color-hull-600: 44 54 84;
+  --color-hull-500: 74 85 120;
+  --color-hull-400: 120 131 166;
+  --color-hull-300: 167 176 204;
+  --color-hull-200: 206 212 230;
+  --color-hull-100: 233 236 245;
+  --page-glow-teal: rgba(94, 200, 242, 0.08);
+  --page-glow-violet: rgba(167, 139, 250, 0.06);
+  --scrollbar-thumb: #2c3654;
+  --scrollbar-thumb-hover: #4a5578;
+  --selection-color: #e9ecf5;
+}
+
+html[data-theme="light"] {
+  color-scheme: light;
+  --color-hull-950: 245 248 252;
+  --color-hull-900: 237 242 248;
+  --color-hull-850: 231 237 245;
+  --color-hull-800: 222 230 240;
+  --color-hull-700: 205 216 231;
+  --color-hull-600: 177 191 213;
+  --color-hull-500: 117 133 158;
+  --color-hull-400: 91 107 134;
+  --color-hull-300: 68 83 110;
+  --color-hull-200: 43 56 80;
+  --color-hull-100: 25 36 57;
+  --page-glow-teal: rgba(45, 212, 191, 0.1);
+  --page-glow-violet: rgba(167, 139, 250, 0.08);
+  --scrollbar-thumb: #b1bfd5;
+  --scrollbar-thumb-hover: #75859f;
+  --selection-color: #192439;
+}
+
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  overscroll-behavior: none;
+}
+
+/* Custom easing tokens (emilkowalski/skills: built-in CSS easings are too
+   weak for UI — they lack the "punch" that makes motion feel intentional) */
+:root {
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+body {
+  background: rgb(var(--color-hull-950));
+  background-image:
+    radial-gradient(circle at 20% -10%, var(--page-glow-teal), transparent 40%),
+    radial-gradient(circle at 90% 10%, var(--page-glow-violet), transparent 35%);
+  background-attachment: fixed;
+  color: rgb(var(--color-hull-100));
+}
+
+/* Thin, unobtrusive scrollbars that still fit the mission-control feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 999px;
+}
+@media (hover: hover) and (pointer: fine) {
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
+  }
+}
+
+/* Visible, deliberate focus ring — never remove focus outlines */
+:focus-visible {
+  outline: 2px solid #2dd4bf;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Theme the browser surfaces we didn't explicitly draw — the cheapest
+   signal that a page was built with care rather than assembled. */
+::selection {
+  background: rgba(45, 212, 191, 0.3);
+  color: var(--selection-color);
+}
+
+/* Mobile platform baseline (emilkowalski/skills: mobile-native) */
+input,
+textarea,
+select {
+  font-size: 16px; /* below this, iOS Safari zooms the page on focus */
+}
+
+button,
+a,
+[role="button"] {
+  touch-action: manipulation; /* skip the ~300ms tap delay */
+  -webkit-user-select: none;
+  user-select: none; /* long-press shouldn't select a button's label */
+  -webkit-touch-callout: none;
+}
+
+/* Press feedback belongs on every tappable element, not just :hover —
+   touch has no hover, and feedback on release instead of press reads as
+   lag even at 0ms. */
+button:active,
+a:active,
+[role="button"]:active {
+  transform: scale(0.97);
+}
+button,
+a,
+[role="button"] {
+  transition: transform 120ms var(--ease-out);
+}
+
+/* Any inner scroll region (the alert log) keeps its own bounce without
+   chaining scroll to the page behind it. */
+.overscroll-contain {
+  overscroll-behavior: contain;
+}
+
+/* Explanation panel entrance — occasional, not high-frequency, so it earns
+   a "standard animation" per the frequency test. @starting-style degrades
+   gracefully: unsupported browsers just show the final state immediately,
+   which is the pre-animation baseline anyway, so there's nothing to fall
+   back to. Never animates from scale(0) — real objects don't appear from
+   nothing. */
+.explanation-enter {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 200ms var(--ease-out), transform 200ms var(--ease-out);
+
+  @starting-style {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+}

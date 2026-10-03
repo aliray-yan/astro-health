@@ -1,0 +1,11 @@
+# Minimum-version pins rather than exact pins, on purpose: an exact pin to
+# e.g. scikit-learn==1.6.0 has no prebuilt wheel for every Python version
+# (notably very new ones -- pip then tries to compile from source, which
+# needs a C/C++ toolchain most machines don't have, and fails). Letting pip
+# resolve within these ranges finds a version with a prebuilt wheel for
+# whatever Python you're running. Recommended: Python 3.11 or 3.12.
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.34,<1.0
+scikit-learn>=1.4,<2.0
+numpy>=1.26,<3.0
+pydantic>=2.9,<3.0
